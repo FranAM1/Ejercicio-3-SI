@@ -63,6 +63,18 @@ Get-Help Get-Service -Examples
 
 ## 3. Create a new text file named “TestFile.txt” under C:\Maximo\PowerShell\Workshop1\%USERNAME%
 
+```
+ni -Path C:\Users\Fran\Documents -Name Ejercicio3SI -ItemType Directory
+ni -Path C:\Users\Fran\Documents\Ejercicio3SI\ -Name TestFile.txt -ItemType File
+```
+
 ## 4. Populate the text file you created in task 3 with allthree datatypes we’ve covered: “Boolean”, “Strig” and “Int”
+```
+ac -Path C:\Users\Fran\Documents\Ejercicio3SI\TestFile.txt -Value True
+ac -Path C:\Users\Fran\Documents\Ejercicio3SI\TestFile.txt -Value "Prueba"
+ac -Path C:\Users\Fran\Documents\Ejercicio3SI\TestFile.txt -Value 42
+```
+![image](https://user-images.githubusercontent.com/91600940/160285208-f1c3e005-5b9f-4203-b772-9bdc49ad0219.png)
 
 ## 5. Read from the text file and use “Get-Member” to find the datatype returned
+
